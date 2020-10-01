@@ -1,0 +1,50 @@
+body{
+    background-color: rgb(196, 250, 232);
+    font-family: ;
+    letter-spacing: 0.1em;
+    font-size: 18px;
+    font-family: 'Dosis', sans-serif;
+    
+}
+h1{
+    text-shadow: 2px 2px #888888;
+    font-family: 'Roboto', sans-serif;
+}
+.alldivs{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    background-color: whitesmoke;
+    padding: 30px 10px;
+    margin-top: 20px;
+    box-shadow: 3px 3px 5px #888888;
+    border-radius: 10px;
+    /* height: 80vh; */
+}
+.mypic{
+    width: 200px;
+    height: auto;
+    border-radius: 150px 150px;
+}
+button a{
+    text-decoration: none;
+}
+button{
+    background-color: teal;
+    border: 1px solid teal;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+button:hover{
+    background-color:black;
+    border: 1px solid black;
+}
+.skills{
+    height: 60vh;
+    padding-top: 100px;
+}
+.social-media ul li{
+    display: inline-block;
+    padding: 10px 10px;
+}

@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    max-width: 100%;
+}
+.blue-part{
+    background-color: rgb(113, 201, 248);
+    background-image: url("tt.png");
+    background-position: left;
+    background-size: cover;
+    color: white;
+}
+
+.main-content{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    height: 100vh;
+}
+.blue-part ul{
+    list-style-type: none;
+    width: 60%;
+    margin: auto;
+    position: relative;
+    top: 25%;
+
+}
+.blue-part ul li{
+    margin-top: 60px;
+    font-weight: bold;
+    word-spacing: 0.3rem;
+    font-size: 21px;
+}
+.part2{
+    width: 65%;
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+
+}
+.sign-up{
+    margin-top: 150px;
+}
+.btns button{
+    width: 65%;
+    margin-top: 10px;
+    border-radius: 30px;
+    padding: 6px 0 6px 0;
+    border: 1px solid  rgb(29, 161, 242);
+    color:rgb(29, 161, 242);
+
+}
+.small-btn{
+    border-radius: 40px;
+    padding: 5px 10px 5px 10px;
+    border: 1.5px solid rgb(29, 161, 242);
+    color:#42a2e3;
+    background-color: white;
+}
+.login input{
+    padding-bottom: 5px;
+    padding-left: 4px;
+    height: 40px;
+    border: none;
+    border-bottom: 2px solid gray;
+    margin: 3px;
+    background-color: rgb(247, 255, 255);
+}
+.link{
+    width: 30%;
+    margin-left: 200px;
+    text-decoration: none;
+    color:rgb(29, 161, 242);
+}
+.sign-up h1{
+    margin-top: 30px;
+    margin-bottom: 40px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.btns .signUp{
+    background-color:rgb(29, 161, 242);
+    /* background-color: cornflowerblue; */
+    color: white;
+}
+.btns .logIn{
+    background-color: white;
+}
+.sign-up img{
+    width: 40px;
+    height: 40px;
+}
+.btns .logIn:hover{
+    background-color: rgb(200, 237, 255);
+}

@@ -11,6 +11,7 @@ h1{
     font-family: 'Roboto', sans-serif;
 }
 .alldivs{
+    display: none;
     width: 70%;
     margin: auto;
     text-align: center;
@@ -20,6 +21,18 @@ h1{
     box-shadow: 3px 3px 5px #888888;
     border-radius: 10px;
     /* height: 80vh; */
+}
+.wlcm-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25%;
+}
+.display-btn{
+    width: 200px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 30px;
 }
 .mypic{
     width: 200px;
@@ -47,4 +60,7 @@ button:hover{
 .social-media ul li{
     display: inline-block;
     padding: 10px 10px;
+}
+.switch{
+    
 }

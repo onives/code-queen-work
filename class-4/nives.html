@@ -2,12 +2,17 @@
 <html lang="en">
 <head>
     <title>Olive Nives Nameere</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="nives.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Roboto&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/907e9d102e.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <div class="wlcm-btn">
+        <button class="display-btn">Display page</button>
+    </div>
     <div class="alldivs intro">
+        <button class="switch">Dark Mode</button>
         <h1>Hi there, I'm Nives!</h1>
         <img class="mypic" src="pp.JPG" alt="nives' pic">
         <p>Hi! My name is Nives. I love creating things that MAKE people's lives SIMPLE</p>
@@ -44,3 +49,31 @@
     </div>
 </body>
 </html>
+<script>
+    $(function(){
+        $(".switch").click(function() {
+            $("body").css("background-color", "#2F2A2F");
+            $("body").css("color", "white");
+            $(".alldivs").css("background-color", "gray");
+            $("button").css("background-color", "#ffbd39");
+            $("button").css("border", "none");
+            $("h1, h3").css("color", "black");
+            $(".switch").text("dark mode activated");
+        });
+
+        $(".alldivs").hover(function(){
+            $(this).css("background-color", "white");
+            $(this).css("color", "balck");
+        },
+        function(){
+            $(this).css("background-color", "whitesmoke");
+            $(this).css("color", "black");
+        });
+
+        $(".display-btn").click(function(){
+            $(".wlcm-btn").hide();
+            $(".alldivs").fadeIn();
+        })
+    })
+    
+</script>

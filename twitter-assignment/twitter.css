@@ -84,6 +84,7 @@
 }
 .btns .logIn{
     background-color: white;
+    
 }
 .sign-up img{
     width: 40px;
@@ -91,4 +92,8 @@
 }
 .btns .logIn:hover{
     background-color: rgb(200, 237, 255);
+}
+.link12{
+    text-decoration: none;
+    color: rgb(29, 161, 242);
 }

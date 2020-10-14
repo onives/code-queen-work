@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>jQuery practice three</title>
+    <link rel="stylesheet" href="events.css" type="text/css"/>
+</head>
+<body>
+    <h1>Can I have another donut?</h1>
+    <img src="https://upload.wikimedia.org/wikipedia/en/0/02/Homer_Simpson_2006.png">  
+    <div>
+        <button class="replyYes">Click to reply Yes</button>
+    </div>
+        <p class="homers-reply"> Hmmmm... </p>
+    <div>
+        <button class="replyNo">Click to reply No</button>
+    </div>
+</body>
+</html>
+
+<script>
+    $(".replyYes").click(function() {  
+        $(".homers-reply").text("Woo Hoo!");
+        $(".replyYes").css("background-color", "yellow");
+        $("img").attr("src", "https://upload.wikimedia.org/wikipedia/en/0/02/Homer_Simpson_2006.png");
+
+    });
+
+    //Independent Practice
+    $(".replyNo").click(function() {  
+        $(".homers-reply").text("Doh");
+        $(".replyYes").css("background-color", "red");
+        $("h1").css("color", "purple");
+        $("img").attr("src", "../class-4/pp.jpg");
+        $("img").css("width", "200px");
+
+    });
+
+</script>

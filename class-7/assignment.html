@@ -42,10 +42,14 @@
         $(".mouseOnBox").text("Thank you for visiting!");
         $(".bottom-right").css("background-color", "white");
     });
+    $(".bottom-right").mouseleave(function(){
+        $(".mouseOnBox").text("come again soon!");
+        $(".bottom-right").css("background-color", "red");
+    });
 
-    $(".bottom-left").mouseleave(function(){
-        $(".hoverBox").text("come again soon!");
-        $(".bottom-left").css("background-color", "red");
+    $(".bottom-left").mouseenter(function(){
+        $(".hoverBox").text("Thanks for hovering!");
+        $(".bottom-left").css("background-color", "yellow");
     });
 
 </script>

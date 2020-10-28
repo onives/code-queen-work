@@ -24,10 +24,20 @@
 let todos = [];
 
 $(".addNew").click(function() {
-    let todo = $(".newToDo").val();
-    todos.push(todo);
-    $('.ToDoList').append(`<li>${todo}</li>`);
+    let newTodo = $(".newToDo").val();
 
+    document.querySelector('.ToDoList').innerHTML = ''
+
+
+    if(newTodo !== ''){
+        todos.push(newTodo);
+        for(let todo of todos){
+            $('.ToDoList').append(`<li>${todo}</li>`);  
+        }
+    }else{
+        alert('You did not enter a To-do')
+    }
+    
     if(todos.length === 1){
         $('.numTasks').text(`You have ${todos.length} todo`);
     }else{

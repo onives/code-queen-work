@@ -24,13 +24,18 @@
 let guests = [];
 
 $(".addButton").click(function() {
-    let guest = $(".guestName").val();
-    guests.push(guest);
-    $('.guestList').append(`<li>${guest}</li>`);
+    let newGuest = $(".guestName").val();
+    guests.push(newGuest);
+
+    document.querySelector('.guestList').innerHTML = ''
+
+    for(let guest of guests){
+        $('.guestList').append(`<li>${guest}</li>`);  
+    }
+    
     $('.guest-number').text(guests.length);
     $(".guestName").val('');
 });
-
 
 
 

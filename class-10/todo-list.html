@@ -27,7 +27,13 @@ $(".addNew").click(function() {
     let todo = $(".newToDo").val();
     todos.push(todo);
     $('.ToDoList').append(`<li>${todo}</li>`);
-    $('.numTasks').text(`You have ${todos.length} todos`);
+
+    if(todos.length === 1){
+        $('.numTasks').text(`You have ${todos.length} todo`);
+    }else{
+        $('.numTasks').text(`You have ${todos.length} todos`);
+    }
+
     $(".newToDo").val('');
 });
 

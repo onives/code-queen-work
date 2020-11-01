@@ -1,0 +1,39 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #45567d;
+    color:#f0f0f0;
+    
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2em;
+    grid-auto-rows: 250px;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.card{
+    border: none;
+    box-shadow: 2px 2px 6px 1px black;
+    background-color:  #303841;
+    border-radius: 7px;
+    padding-top: 30px;
+    cursor: pointer;
+    font-family: 'Dosis', sans-serif;
+    font-size: 1.2rem;
+    /* color:#f0f0f0; */
+}
+.heading{
+    text-align: center;
+    font-size: 3.5rem;
+    text-shadow: 2px 2px 0px rgba(26, 25, 25, 0.5);
+}
+.card:hover{
+    background-color: #F7E8EC;
+    color:  #442946;
+    transform: scale(1.1);
+}

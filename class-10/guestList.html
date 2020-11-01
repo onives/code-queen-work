@@ -23,6 +23,8 @@
     
 let guests = [];
 
+
+
 $(".addButton").click(function() {
     let newGuest = $(".guestName").val();
     guests.push(newGuest);
@@ -30,11 +32,12 @@ $(".addButton").click(function() {
     document.querySelector('.guestList').innerHTML = ''
 
     for(let guest of guests){
-        $('.guestList').append(`<li>${guest}</li>`);  
+        $('.guestList').append(`<li>${guest}</li>`); 
     }
     
     $('.guest-number').text(guests.length);
     $(".guestName").val('');
+    
 });
 
 

@@ -115,6 +115,12 @@ $(function(){
     let studentId = $(`<h4>Id : ${student.id}</h4>`, {class: 'ids'});
 
     $(cardDiv).append(studentName, studentId, studentAge);
+
+    for (let subject of student.subjects) {
+      let subjectSummary = $(`<p>${subject.name} : ${subject.score}</P>`);
+      subjectSummary.addClass('results');
+      $(cardDiv).append(subjectSummary);
+    }
   
   };
   

@@ -19,7 +19,8 @@ body{
 .card{
     border: none;
     box-shadow: 2px 2px 6px 1px black;
-    background-color:  #303841;
+    background-color: rgb(92, 92, 92);
+    /* background-color:  #303841; */
     border-radius: 7px;
     padding: 30px;
     cursor: pointer;
@@ -31,12 +32,12 @@ body{
     font-size: 3.5rem;
     text-shadow: 2px 2px 0px rgba(26, 25, 25, 0.5);
 }
+.results{
+    color:black;
+    font-weight: bold;
+}
 .card:hover{
     background-color: #F7E8EC;
     color:  #442946;
     transform: scale(1.1);
-}
-.results{
-    color: #be3144;
-    font-weight: 600;
 }

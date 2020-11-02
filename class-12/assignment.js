@@ -110,9 +110,9 @@ $(function(){
     let cardDiv = $('<div>', {class: 'card'});
     $('.cards').append(cardDiv);
     
-    let studentName = $(`<h3>Name : ${student.name}</h3>`, {class: 'names'});
-    let studentAge = $(`<h4>Age : ${student.age}</h4>`, {class: 'ages'});
-    let studentId = $(`<h4>Id : ${student.id}</h4>`, {class: 'ids'});
+    let studentName = $(`<h3>Name : ${student.name}</h3>`);
+    let studentAge = $(`<h4>Age : ${student.age}</h4>`);
+    let studentId = $(`<h4>Id : ${student.id}</h4>`);
 
     $(cardDiv).append(studentName, studentId, studentAge);
 
